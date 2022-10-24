@@ -408,17 +408,7 @@ public class DefaultGroovyMethods extends DefaultGroovyMethodsSupport {
         return (U) with(self, true, (Closure<Object>)closure);
     }
 
-    /**
-     * Allows the subscript operator to be used to lookup dynamic property values.
-     * <code>bean[somePropertyNameExpression]</code>. The normal property notation
-     * of groovy is neater and more concise but only works with compile-time known
-     * property names.
-     *
-     * @param self     the object to act upon
-     * @param property the property name of interest
-     * @return the property value
-     * @since 1.0
-     */
+    @Deprecated
     public static Object getAt(Object self, String property) {
         return InvokerHelper.getProperty(self, property);
     }
