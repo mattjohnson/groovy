@@ -15,3 +15,5 @@
 
 jdk11 = true
 customTools = [".muse/codenarc.sh"]
+
+tools = ["errorprone"]

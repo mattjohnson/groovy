@@ -3177,16 +3177,7 @@ public class DefaultGroovyMethods extends DefaultGroovyMethodsSupport {
         return count(Arrays.asList(self), closure);
     }
 
-    /**
-     * Counts the number of occurrences of the given value inside this array.
-     * Comparison is done using Groovy's == operator (using
-     * <code>compareTo(value) == 0</code> or <code>equals(value)</code> ).
-     *
-     * @param self  the array within which we count the number of occurrences
-     * @param value the value being searched for
-     * @return the number of occurrences
-     * @since 1.6.4
-     */
+    @Deprecated
     public static Number count(int[] self, Object value) {
         return ArrayGroovyMethods.count(self, value);
     }
